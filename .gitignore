@@ -1,2 +1,4 @@
 .DS*
 com.*
+.idea/*
+node_modules/*

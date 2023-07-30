@@ -1,7 +1,16 @@
+NOTE: All the source code is within the `spotifyviz` folder to make building for webos easier.
+
+
 ## WebOS ##
 
 ### Good page for docs ###
 https://webostv.developer.lge.com/develop/tools/cli-dev-guide#ares-generate
+
+### Add Device ###
+https://webostv.developer.lge.com/develop/getting-started/developer-mode-app
+
+### Install CLI ###
+https://webostv.developer.lge.com/develop/tools/cli-installation
 
 ### Generate Hosted WebApp ###
 
