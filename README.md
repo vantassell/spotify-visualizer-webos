@@ -1,3 +1,5 @@
+This is the repo for the WebOS (TV) deployment of my [Spotify Visualizer](https://github.com/vantassell/spotify-visualizer-webapp). This repo builds an app that can be deployed onto LG televisions (and probably any other device that supports WebOS).
+
 NOTE: All the source code is within the `spotifyviz` folder to make building for webos easier.
 
 
@@ -55,6 +57,8 @@ Launch the app, then run `ares-inspect --device avt-lg --app com.domain.app --op
 
 ### All In One ###
 `ares-package --no-minify ./spotifyviz && ares-install --device avt-lg ./com.domain.app_0.0.3_all.ipk && ares-inspect --device avt-lg --app com.domain.app --open`
+
+`ares-install --device avt-lg --remove com.spotifyvisualizer.app && ares-install --device avt-lg ./com.spotifyvisualizer.app_0.0.a_all.ipk && ares-inspect --device avt-lg --app com.spotifyvisualizer.app`
 
 ### Simulator Commands ###
 No need to build, you can install the folder directly
