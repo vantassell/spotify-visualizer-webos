@@ -1,6 +1,7 @@
 This is the repo for the WebOS (TV) deployment of my [Spotify Visualizer](https://github.com/vantassell/spotify-visualizer-webapp). This repo builds an app that can be deployed onto LG televisions (and probably any other device that supports WebOS).
 
-NOTE: All the source code is within the `spotifyviz` folder to make building for webos easier.
+
+_NOTE: All the source code is within the `spotifyviz` folder to make building for webos easier._
 
 
 ## WebOS ##
@@ -13,6 +14,31 @@ https://webostv.developer.lge.com/develop/getting-started/developer-mode-app
 
 ### Install CLI ###
 https://webostv.developer.lge.com/develop/tools/cli-installation
+
+### Install Device ###
+Use the below to add, delete, or modify a device.
+`ares-setup-device`
+
+```? Select add
+? Enter Device Name: avt-lg
+? Enter Device IP address: 192.168.1.18
+? Enter Device Port: 22 (no input)
+? Enter ssh user: root (no input)
+? Enter description: avt-lg
+? Select authentication: password
+? Enter password: (no input)
+? Set default ? Yes
+? Save ? Yes
+```
+confirm your setup
+`ares-setup-device --list`
+
+get your key for connection
+`ares-novacom --device avt-lg --getkey`
+
+test connection
+`ares-device-info --device avt-lg`
+
 
 ### Generate Hosted WebApp ###
 
@@ -63,3 +89,10 @@ Launch the app, then run `ares-inspect --device avt-lg --app com.domain.app --op
 ### Simulator Commands ###
 No need to build, you can install the folder directly
 `ares-launch -s 23 ./spotifyviz`
+
+
+## Logo Creation ##
+'https://pixelied.com/editor/design/64c6ecf97a4ebb2e04f57d38'
+
+## Extract frame from video bg ##
+`ffmpeg -i starloop.mp4 -ss 00:00:00 -vframes 1 frame_out.jpg`

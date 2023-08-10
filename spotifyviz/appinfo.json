@@ -1,10 +1,13 @@
 {
-  "id": "com.spotify-visualizer.app",
-  "version": "0.0.1",
+  "id": "com.off-fairfax.app.visualizer-for-spotify",
+  "version": "1.0.0",
   "vendor": "Andrew Van Tassell",
   "type": "web",
   "main": "index.html",
-  "title": "Spotify Visualizer",
+  "title": "Visualizer for Spotify",
   "icon": "icon.png",
-  "largeIcon": "largeIcon.png"
+  "largeIcon": "largeIcon.png",
+  "splashBackground": "splashBackground-repeated-1080.png",
+  "iconColor": "#000000",
+  "appDescription": "A way to display on your television the song that's playing on your spotify. NOTE: No audio will play from this app, only video. This is due to restrictions in Spotify's SDK, sorry!!"
 }
