@@ -2,3 +2,4 @@
 com.*
 .idea/*
 node_modules/*
+webOS_TV_SDK/*
