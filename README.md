@@ -34,7 +34,7 @@ confirm your setup
 `ares-setup-device --list`
 
 get your key for connection
-`ares-novacom --device avt-lg --getkey`
+`ares-novacom --device avt-lg --getkey` (enter Passphrase shown in DEVELOPER MODE app on TV)
 
 test connection
 `ares-device-info --device avt-lg`
